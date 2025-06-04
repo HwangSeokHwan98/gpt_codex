@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>engineering_calculator</name>
+  <version>0.0.1</version>
+  <description>Scientific calculator implemented as a ROS2 (Foxy) service.</description>
+  <maintainer email="example@example.com">Example Maintainer</maintainer>
+  <license>MIT</license>
+  <exec_depend>rclpy</exec_depend>
+</package>
