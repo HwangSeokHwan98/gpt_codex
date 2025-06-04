@@ -59,3 +59,12 @@ The expression evaluator can be tested without ROS 2 using `pytest`:
 pytest engineering_calculator/test
 ```
 
+## Standalone GUI Calculator
+
+You can run the calculator as a desktop application without ROS 2. The GUI is
+implemented with `tkinter` and uses the same safe expression evaluator:
+
+```bash
+python engineering_calculator/gui_calculator.py
+```
+
