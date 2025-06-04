@@ -27,3 +27,35 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## License
 
 [MIT](LICENSE) (placeholder)
+
+## Engineering Calculator ROS2 Package
+
+This repository contains a ROS 2 (Foxy) package called `engineering_calculator`.
+The package provides a service named `calculate_expression` that evaluates
+mathematical expressions using a safe parser. The service returns the computed
+result or an error message.
+
+### Building and Running
+
+1. Install ROS 2 Foxy and source your ROS 2 environment.
+2. Build the package using `colcon build`:
+
+```bash
+colcon build --packages-select engineering_calculator
+```
+
+3. Source the workspace and run the service node:
+
+```bash
+. install/setup.bash
+ros2 run engineering_calculator calculator_server
+```
+
+### Testing
+
+The expression evaluator can be tested without ROS 2 using `pytest`:
+
+```bash
+pytest engineering_calculator/test
+```
+
